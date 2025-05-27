@@ -2,6 +2,11 @@
 
 A modern, responsive weather application that provides real-time weather information for cities across India.
 
+## Live Demo
+
+Check out the live weather app here:  
+[https://sohamsarda.github.io/weather-report/](https://sohamsarda.github.io/weather-report/)
+
 ## Features
 
 - Search for weather information of any Indian city
@@ -35,4 +40,4 @@ A modern, responsive weather application that provides real-time weather informa
 
 ## Note
 
-This application requires an internet connection to fetch weather data from the OpenMeteo API. The API is completely free to use with no rate limits. 
+This application requires an internet connection to fetch weather data from the OpenMeteo API. The API is completely free to use with no rate limits.
