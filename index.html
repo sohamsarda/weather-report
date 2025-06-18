@@ -12,15 +12,15 @@
     <div class="container">
         <div class="search-box">
             <h1>India Weather Report</h1>
-            <div class="search-bar">
+            <form id="search-form">
                 <input type="text" id="city-input" placeholder="Enter city name in India...">
-                <button id="search-btn">
+                <button type="submit" id="search-btn">
                     <i class="fas fa-search"></i>
                 </button>
-            </div>
+            </form>
         </div>
         
-        <div class="weather-info" id="weather-info">
+        <div class="weather-info" id="weather-info" style="display: none;">
             <div class="weather-card">
                 <div class="weather-header">
                     <h2 id="city-name">Search for a city</h2>
@@ -49,8 +49,12 @@
                     </div>
                 </div>
             </div>
+
+            <div class="forecast-container" id="forecast-container">
+                <!-- 3-day forecast cards will go here -->
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
