@@ -1,43 +1,37 @@
-# India Weather Report
+# 🌤️ India Weather Report
 
-A modern, responsive weather application that provides real-time weather information for cities across India.
+A responsive web application to view real-time weather information and 3-day forecasts for cities in India (or worldwide), using Open-Meteo's free APIs.
 
-## Live Demo
+![Weather UI Screenshot](screenshot.png) <!-- Replace with your actual screenshot file -->
 
-Check out the live weather app here:  
-[https://sohamsarda.github.io/weather-report/](https://sohamsarda.github.io/weather-report/)
+---
 
-## Features
+## 🔍 Features
 
-- Search for weather information of any Indian city
-- Real-time temperature display
-- Weather conditions with dynamic icons
-- Additional weather details (wind speed, humidity, pressure)
-- Responsive design that works on all devices
-- Modern and clean user interface
-- Completely free to use - no API key required
+- 🌆 Search weather by city name
+- 📍 Get weather using your current location (Geolocation API)
+- 🌡️ Toggle between Celsius and Fahrenheit
+- 🌞 View current temperature, humidity, wind speed, and pressure
+- 🌅 Sunrise and sunset time display
+- 🗓️ 3-day weather forecast with icons
+- 🌗 Light/Dark mode toggle
+- 🔄 Auto-remember last searched city
 
-## Setup Instructions
+---
 
-1. Simply open `index.html` in a web browser
-   - You can use any modern web browser (Chrome, Firefox, Safari, Edge)
-   - For the best experience, use the latest version of your browser
+## 🛠️ Tech Stack
 
-## Usage
+- **HTML5** + **CSS3**
+- **JavaScript (Vanilla)**
+- **Open-Meteo API** (Weather & Geocoding)
+- **Font Awesome** (Weather Icons)
+- **Google Fonts** (Poppins)
 
-1. Enter the name of any Indian city in the search box
-2. Press Enter or click the search button
-3. View the current weather information for the selected city
+---
 
-## Technologies Used
+## 🚀 Getting Started (Local Setup)
 
-- HTML5
-- CSS3 (with modern features like Flexbox and Grid)
-- JavaScript (ES6+)
-- OpenMeteo API (Free, no API key required)
-- Font Awesome icons
-- Google Fonts (Poppins)
-
-## Note
-
-This application requires an internet connection to fetch weather data from the OpenMeteo API. The API is completely free to use with no rate limits.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/india-weather-report.git
+   cd india-weather-report
