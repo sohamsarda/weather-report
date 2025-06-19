@@ -7,17 +7,62 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Optional quick styling for new elements */
+        #error-message {
+            display: none;
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+        }
+        #loading-spinner {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .toggles {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .toggles button {
+            margin: 0 5px;
+            padding: 6px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="search-box">
             <h1>India Weather Report</h1>
-            <form id="search-form">
-                <input type="text" id="city-input" placeholder="Enter city name in India...">
-                <button type="submit" id="search-btn">
+            <form id="search-form" aria-label="Search for city weather">
+                <input type="text" id="city-input" placeholder="Enter city name..." aria-label="City name">
+                <button type="submit" id="search-btn" aria-label="Search">
                     <i class="fas fa-search"></i>
                 </button>
+                <button type="button" id="clear-btn" aria-label="Clear input" style="display:none;">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button type="button" id="geo-btn" title="Use my location" aria-label="Use my location">
+                    <i class="fas fa-location-arrow"></i>
+                </button>
             </form>
+
+            <!-- NEW: Error and loading indicators -->
+            <div id="error-message"></div>
+            <div id="loading-spinner">
+                <i class="fas fa-spinner fa-spin fa-2x"></i>
+            </div>
+
+            <!-- NEW: Toggles for temperature unit and theme -->
+            <div class="toggles">
+                <button id="unit-toggle" aria-label="Toggle temperature unit">°C / °F</button>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
         
         <div class="weather-info" id="weather-info" style="display: none;">
@@ -48,6 +93,7 @@
                         <span id="pressure">-- hPa</span>
                     </div>
                 </div>
+                <!-- Sunrise/sunset will be injected here -->
             </div>
 
             <div class="forecast-container" id="forecast-container">
@@ -55,6 +101,7 @@
             </div>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
